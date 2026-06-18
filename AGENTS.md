@@ -15,7 +15,7 @@ You have docker with images:
 
 # Unit Testing
 - Run `swift test` for local unit tests
-- Run `docker run --rm -t  -v "$PWD":/workspace -w /workspace swift:6.1 swift test --jobs 1` for unit test on linux
+- Run `docker build -t bilboard-test . && docker run --rm bilboard-test` for unit test on linux
 
 # Change commit
 Never commit anything, let user review changes.

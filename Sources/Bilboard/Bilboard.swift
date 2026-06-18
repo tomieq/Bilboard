@@ -2,6 +2,7 @@ import Foundation
 import SwiftGD
 
 public final class Bilboard {
+    private let spacingBetweenLetters = 1
     public let horizontalVirtualPixelsAmount: Int
     public let verticalVirtualPixelsAmount: Int
     public let colorSign: BilboardColorSign
@@ -96,7 +97,7 @@ public final class Bilboard {
             let glyphKey = String(scalar)
             let glyph = self.font.glyph(for: glyphKey)
             self.printLetter(glyphKey, x: offset, y: yOffset * 10)
-            offset += 1 + glyph.width
+            offset += 1 + self.spacingBetweenLetters + glyph.width
         }
     }
 
@@ -142,7 +143,7 @@ public final class Bilboard {
 
     private func countSentenceWidth(_ sentence: String) -> Int {
         sentence.reduce(into: 0) { width, scalar in
-            width += 1 + self.font.glyph(for: String(scalar)).width
+            width += 1 + self.spacingBetweenLetters + self.font.glyph(for: String(scalar)).width
         }
     }
 
