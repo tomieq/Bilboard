@@ -7,7 +7,7 @@ import SwiftGD
     let bilboard = try Bilboard(
         horizontalVirtualPixelsAmount: 20,
         imageHeightInLines: 2,
-        colorSign: .blue,
+        color: .blue,
         borderActive: true
     )
 

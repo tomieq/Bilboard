@@ -1,4 +1,4 @@
-public enum BilboardColorSign: String, CaseIterable, Sendable {
+public enum BilboardColor: String, CaseIterable, Sendable {
     case red
     case green
     case orange

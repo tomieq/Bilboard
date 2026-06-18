@@ -5,7 +5,7 @@ public final class Bilboard {
     private let spacingBetweenLetters = 1
     public let horizontalVirtualPixelsAmount: Int
     public let verticalVirtualPixelsAmount: Int
-    public let colorSign: BilboardColorSign
+    public let color: BilboardColor
     public let borderActive: Bool
 
     private let font: BilboardFont
@@ -18,7 +18,7 @@ public final class Bilboard {
     public init(
         horizontalVirtualPixelsAmount: Int,
         imageHeightInLines: Int,
-        colorSign: BilboardColorSign = .red,
+        color: BilboardColor = .red,
         borderActive: Bool = false
     ) throws {
         guard horizontalVirtualPixelsAmount >= 0, imageHeightInLines >= 0 else {
@@ -27,13 +27,13 @@ public final class Bilboard {
 
         self.horizontalVirtualPixelsAmount = horizontalVirtualPixelsAmount
         self.verticalVirtualPixelsAmount = imageHeightInLines * 10
-        self.colorSign = colorSign
+        self.color = color
         self.borderActive = borderActive
         self.borderOffset = borderActive ? 4 : 0
         self.imageWidth = horizontalVirtualPixelsAmount * 3 + 7 + 2 * self.borderOffset
         self.imageHeight = self.verticalVirtualPixelsAmount * 3 + 7 + 2 * self.borderOffset
         self.font = try BilboardFont.load()
-        self.palette = BilboardPalette(sign: colorSign)
+        self.palette = BilboardPalette(color: color)
         self.activePixels = []
     }
 
@@ -138,6 +138,17 @@ public final class Bilboard {
             return try image.export(as: .png)
         } catch {
             throw BilboardError.pngExportFailed
+        }
+    }
+
+    public func drawFromPattern(_ pattern: String, x: Int, y: Int) {
+        let lines = pattern.split(separator: "\n")
+        for (row, line) in lines.enumerated() {
+            for (index, char) in line.enumerated() {
+                if char != " " {
+                    self.setBigPixel(x + index, y + row)
+                }
+            }
         }
     }
 

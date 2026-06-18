@@ -6,8 +6,8 @@ struct BilboardPalette {
     let backgroundLight: Color
     let backgroundDark: Color
 
-    init(sign: BilboardColorSign) {
-        switch sign {
+    init(color: BilboardColor) {
+        switch color {
         case .red:
             self.pixelLight = Self.rgb(255, 102, 102)
             self.pixelDark = Self.rgb(255, 0, 0)
