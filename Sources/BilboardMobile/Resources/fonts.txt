@@ -1,0 +1,829 @@
+-----a
+
+
+  xxx
+     x
+ xxxxx
+x    x
+ xxxxx
+-----ą
+
+
+  xxx
+     x
+ xxxxx
+x    x
+ xxxxx
+    x
+-----b
+x
+x
+xxxx
+x   x
+x   x
+x   x
+xxxx
+-----c
+
+
+ xxx
+x   x
+x
+x   x
+ xxx
+-----ć
+   x
+  x
+ xxx
+x   x
+x
+x   x
+ xxx
+-----d
+    x
+    x
+ xxxx
+x   x
+x   x
+x   x
+ xxxx
+-----e
+
+
+ xxx
+x   x
+xxxxx
+x
+ xxxx
+-----ę
+
+
+ xxx
+x   x
+xxxxx
+x
+ xxxx
+   x
+   x
+-----f
+  xx
+ x
+xxxx
+ x
+ x
+ x
+ x
+-----g
+
+
+ xxxx
+x   x
+x   x
+x   x
+ xxxx
+    x
+ xxx
+-----h
+x
+x
+xxxx
+x   x
+x   x
+x   x
+x   x
+-----i
+x
+
+x
+x
+x
+x
+x
+-----j
+ x
+
+ x
+ x
+ x
+ x
+ x
+ x
+x
+-----k
+x
+x
+x  x
+x x
+xx
+x x
+x  x
+-----l
+x
+x
+x
+x
+x
+x
+x
+-----ł
+ x
+ x
+ xx
+xx
+ x
+ x
+ x
+-----m
+
+
+xxxxxx
+x  x  x
+x  x  x
+x  x  x
+x  x  x
+-----n
+
+
+xxxx
+x   x
+x   x
+x   x
+x   x
+-----ń
+  x
+ x
+xxxx
+x   x
+x   x
+x   x
+x   x
+-----o
+
+
+ xxx
+x   x
+x   x
+x   x
+ xxx
+-----ó
+
+  x
+ xxx
+x   x
+x   x
+x   x
+ xxx
+-----p
+
+
+xxxx
+x   x
+x   x
+x   x
+xxxx
+x
+x
+-----r
+
+
+x xx
+xx
+x
+x
+x
+-----s
+
+
+ xxxx
+x
+ xxx
+    x
+xxxx
+-----ś
+    x
+   x
+ xxxx
+x
+ xxx
+    x
+xxxx
+-----q
+
+
+ xxx
+x   x
+x   x
+x   x
+ xxxx
+    x
+    x
+-----t
+ x
+ x
+xxxx
+ x
+ x
+ x
+  xx
+-----u
+
+
+x   x
+x   x
+x   x
+x   x
+ xxxx
+-----w
+
+
+x     x
+x  x  x
+x  x  x
+x  x  x
+ xx xx
+-----v
+
+
+x   x
+x   x
+x   x
+ x x
+  x
+-----x
+
+
+x   x
+ x x
+  x
+ x x
+x   x
+-----y
+
+
+x   x
+x   x
+x   x
+x   x
+ xxxx
+    x
+ xxx
+-----z
+
+
+xxxxx
+   x
+  x
+ x
+xxxxx
+-----ź
+   x
+  x
+xxxxx
+   x
+  x
+ x
+xxxxx
+-----ż
+   
+  x
+xxxxx
+   x
+  x
+ x
+xxxxx
+-----1
+ x
+xx
+ x
+ x
+ x
+ x
+ x
+-----2
+ xxx
+x   x
+    x
+   x
+  x
+ x
+xxxxx
+-----3
+ xxx
+x   x
+    x
+  xx
+    x
+x   x
+ xxx
+-----4
+   x
+  xx
+ x x
+x  x
+xxxx
+   x
+   x
+-----5
+xxxxx
+x
+xxxx
+    x
+    x
+x   x
+ xxx
+-----6
+ xxx
+x   x
+x
+xxxx
+x   x
+x   x
+ xxx
+-----7
+xxxxx
+    x
+    x
+   x
+  x
+ x
+ x
+-----8
+ xxx
+x   x
+x   x
+ xxx
+x   x
+x   x
+ xxx
+-----9
+ xxx
+x   x
+x   x
+ xxxx
+    x
+x   x
+ xxx
+-----0
+ xxx
+x   x
+x   x
+x   x
+x   x
+x   x
+ xxx
+-----%
+ x   x
+x x x
+ x  x
+   x
+  x  x
+  x x x
+ x   x
+-----A
+ xxx
+x   x
+x   x
+xxxxx
+x   x
+x   x
+x   x
+-----Ą
+ xxx
+x   x
+x   x
+xxxxx
+x   x
+x   x
+x   x
+   x
+-----B
+xxxx
+x   x
+x   x
+xxxx
+x   x
+x   x
+xxxx
+-----C
+ xxx
+x   x
+x
+x
+x
+x   x
+ xxx
+-----D
+xxxx
+x   x
+x   x
+x   x
+x   x
+x   x
+xxxx
+-----E
+xxxxx
+x
+x
+xxx
+x
+x
+xxxxx
+-----F
+xxxxx
+x
+x
+xxx
+x
+x
+x
+-----G
+ xxx
+x   x
+x
+x xxx
+x   x
+x   x
+ xxx
+-----H
+x   x
+x   x
+x   x
+xxxxx
+x   x
+x   x
+x   x
+-----I
+x
+x
+x
+x
+x
+x
+x
+-----J
+ xxxx
+    x
+    x
+    x
+    x
+x   x
+ xxx
+-----K
+x   x
+x  x
+x x
+xx
+x x
+x  x
+x   x
+-----L
+x
+x
+x
+x
+x
+x
+xxxxx
+-----Ł
+ x
+ x
+ xx
+xx
+ x
+ x
+ xxxxx
+-----M
+x     x
+xx   xx
+x x x x
+x  x  x
+x     x
+x     x
+x     x
+-----N
+x    x
+xx   x
+x x  x
+x  x x
+x  x x
+x   xx
+x    x
+-----O
+ xxx
+x   x
+x   x
+x   x
+x   x
+x   x
+ xxx
+-----P
+xxxx
+x   x
+x   x
+x   x
+xxxx
+x
+x
+-----R
+xxxx
+x   x
+x   x
+x   x
+xxxx
+x  x
+x   x
+-----S
+ xxx
+x   x
+x
+ xxx
+    x
+x   x
+ xxx
+-----Ś
+ xxx
+x x x
+x
+ xxx
+    x
+x   x
+ xxx
+-----T
+xxxxx
+  x
+  x
+  x
+  x
+  x
+  x
+-----U
+x   x
+x   x
+x   x
+x   x
+x   x
+x   x
+ xxx
+-----W
+x     x
+x     x
+x     x
+x  x  x
+ x x x
+ x x x
+  x x
+-----V
+x   x
+x   x
+x   x
+x   x
+x   x
+ x x
+  x
+-----X
+x   x
+x   x
+ x x
+  x
+ x x
+x   x
+x   x
+-----Y
+x   x
+x   x
+x   x
+ x x
+  x
+  x
+  x
+-----Z
+xxxxx
+    x
+   x
+  x
+ x
+x
+xxxxx
+-----Q
+ xxx
+x   x
+x   x
+x   x
+x   x
+x  xx
+ xxx x
+-----Ż
+xxxxx
+    x
+   x
+ xxx
+ x
+x
+xxxxx
+----- 
+     
+-----.
+
+
+
+
+
+x
+-----,
+
+
+
+
+
+x
+x
+-----!
+x
+x
+x
+x
+x
+
+x
+-----+
+
+  x
+  x
+xxxxx
+  x
+  x
+------
+
+
+xxxx
+-----=
+
+
+xxxx
+
+xxxx
+-----#
+  x x
+  x x
+xxxxxxx
+  x x
+xxxxxxx
+  x x
+  x x
+-----(
+ x
+x
+x
+x
+x
+x
+x
+ x
+-----)
+x
+ x
+ x
+ x
+ x
+ x
+ x
+x
+-----{
+  x
+ x
+ x
+ x
+x
+ x
+ x
+ x
+  x
+-----}
+x
+ x
+ x
+ x
+ x
+x
+-----<
+   x
+  x
+ x
+x
+ x
+  x
+   x
+----->
+x
+ x
+  x
+   x
+  x
+ x
+x
+-----?
+ xxx
+x   x
+    x
+   x
+  x 
+
+  x
+-----:
+
+
+x
+
+
+x
+-----;
+
+
+x
+
+
+x
+x
+-----/
+   x
+   x
+  x
+ x
+ x
+x
+x
+-----\
+x
+x
+ x
+  x
+  x
+   x
+   x
+-----'
+x
+x
+-----"
+x x
+x x
+-----*
+ x
+xxx
+ x
+-----@
+  xxxxx
+ x     x
+x  xx   x
+x x  x  x
+x x  x  x
+x x  x  x
+x  xx xxx
+ x     x
+  xxxxx
+-----&
+ x
+x x
+x x
+ xx
+x x
+x  x
+x  x
+ xx x
+-----$
+ xxx
+x x x
+x x
+ xxx
+  x x
+x x x
+ xxx
+-----^
+  xxx
+ x   
+xxxx
+ x
+xxxx
+ x   
+  xxx
+-----++
+xxxxx
+xxxxx
+xxxxx
+xxxxx
+xxxxx
+xxxxx
+xxxxx
+xxxxx
+xxxxx
+-----_
+     
+-----`
+  xxx   xxx
+ xxxxx xxxxx
+ xxxxxxxxxxx
+ xxxxxxxxxxx
+  xxxxxxxxx
+   xxxxxxx
+    xxxxx
+     xxx
+      x

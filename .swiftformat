@@ -1,10 +1,6 @@
 #https://github.com/nicklockwood/SwiftFormat/blob/master/Rules.md
 --disable all
 
-# force using self
---self "insert"
---enable redundantSelf
-
 --enable andOperator,anyObjectProtocol,assertionFailures
 
 # blank lines around scope

@@ -43,6 +43,17 @@ Then add the product to your target:
 )
 ```
 
+For an iOS app, depend on the UIKit-backed product instead. It has no SwiftGD or libgd dependency:
+
+```swift
+.target(
+    name: "MyiOSApp",
+    dependencies: [
+        .product(name: "BilboardMobile", package: "Bilboard")
+    ]
+)
+```
+
 ## Core Concepts
 
 - `horizontalVirtualPixelsAmount` is the board width in virtual pixels.
@@ -84,6 +95,26 @@ Drawing methods:
 - `fillRandom(granularity:)`
 - `drawFromPattern(_ pattern:x:y:)`
 - `getImage() throws -> Data`
+
+### `BilboardMobile` (iOS)
+
+`BilboardMobile` provides the same `Bilboard`, `BilboardColor`, and drawing APIs as the PNG product, but uses UIKit to return a native `UIImage`. Its `getImage()` method does not throw:
+
+```swift
+import BilboardMobile
+import SwiftUI
+
+let bilboard = try Bilboard(
+    horizontalVirtualPixelsAmount: 120,
+    imageHeightInLines: 3,
+    color: .blue,
+    borderActive: true
+)
+bilboard.addSentenceCenter("Status: OK", yOffset: 1)
+
+let image = Image(uiImage: bilboard.getImage())
+    .interpolation(.none)
+```
 
 ### `BilboardColor`
 

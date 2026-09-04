@@ -10,6 +10,10 @@ let package = Package(
         .library(
             name: "Bilboard",
             targets: ["Bilboard"]
+        ),
+        .library(
+            name: "BilboardMobile",
+            targets: ["BilboardMobile"]
         )
     ],
     dependencies: [
@@ -23,6 +27,12 @@ let package = Package(
             dependencies: [
                 .product(name: "SwiftGD", package: "SwiftGD")
             ],
+            resources: [
+                .copy("Resources/fonts.txt")
+            ]
+        ),
+        .target(
+            name: "BilboardMobile",
             resources: [
                 .copy("Resources/fonts.txt")
             ]
