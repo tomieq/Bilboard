@@ -1,6 +1,6 @@
 # Summary
 
-Swift library using SwiftGD for generating pixelized png bilboards. It needs to work on MacOS and Linux. It distributed with Swift Package Manager.
+Swift library using SwiftGD for generating pixelized png bilboards. It needs to work on MacOS and Linux. It is distributed with Swift Package Manager.
 
 # Project Structure
 All new classes/structs/enums put in appropriate folder in separate file. Do not create long files with multiple definitions inside. Although you can add type's extensions in the same file as extended type. If you need extend some object to protocol, name file ObjectType+ProtocolName.swift.
