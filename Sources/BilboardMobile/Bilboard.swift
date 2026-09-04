@@ -201,11 +201,19 @@ public final class Bilboard {
             context.fill(CGRect(x: self.imageWidth - 4, y: 4, width: 4, height: self.imageHeight - 9))
         }
 
-        self.fill(
-            context,
-            rect: CGRect(x: self.borderOffset, y: self.borderOffset, width: self.imageWidth - 2 * self.borderOffset, height: self.imageHeight - 2 * self.borderOffset),
-            color: UIColor(red: 34 / 255, green: 34 / 255, blue: 34 / 255, alpha: 1)
-        )
+        if self.borderActive {
+            self.fill(
+                context,
+                rect: CGRect(x: self.borderOffset, y: self.borderOffset, width: self.imageWidth - 2 * self.borderOffset, height: self.imageHeight - 2 * self.borderOffset),
+                color: UIColor(red: 34 / 255, green: 34 / 255, blue: 34 / 255, alpha: 1)
+            )
+        } else {
+            self.fill(
+                context,
+                rect: CGRect(x: 2, y: 2, width: 3 * self.horizontalVirtualPixelsAmount + 2, height: 3 * self.verticalVirtualPixelsAmount + 2),
+                color: UIColor(red: 34 / 255, green: 34 / 255, blue: 34 / 255, alpha: 1)
+            )
+        }
         if self.borderActive {
             context.setStrokeColor(UIColor(red: 102 / 255, green: 102 / 255, blue: 102 / 255, alpha: 1).cgColor)
             context.setLineWidth(1)

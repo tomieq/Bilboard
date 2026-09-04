@@ -228,11 +228,19 @@ public final class Bilboard {
             )
         }
 
-        image.fillRectangle(
-            topLeft: Point(x: self.borderOffset, y: self.borderOffset),
-            bottomRight: Point(x: self.imageWidth - 1 - self.borderOffset, y: self.imageHeight - 1 - self.borderOffset),
-            color: BilboardPalette.rgb(34, 34, 34)
-        )
+        if self.borderActive {
+            image.fillRectangle(
+                topLeft: Point(x: self.borderOffset, y: self.borderOffset),
+                bottomRight: Point(x: self.imageWidth - 1 - self.borderOffset, y: self.imageHeight - 1 - self.borderOffset),
+                color: BilboardPalette.rgb(34, 34, 34)
+            )
+        } else {
+            image.fillRectangle(
+                topLeft: Point(x: 2, y: 2),
+                bottomRight: Point(x: 3 * self.horizontalVirtualPixelsAmount + 3, y: 3 * self.verticalVirtualPixelsAmount + 3),
+                color: BilboardPalette.rgb(34, 34, 34)
+            )
+        }
         if self.borderActive {
             image.drawLine(
                 from: Point(x: self.borderOffset + 2, y: self.imageHeight - 2 - self.borderOffset),
