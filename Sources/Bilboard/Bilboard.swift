@@ -7,6 +7,7 @@ public final class Bilboard {
     public let verticalVirtualPixelsAmount: Int
     public let color: BilboardColor
     public let borderActive: Bool
+    public let renderBackground: Bool
 
     private let font: BilboardFont
     private let palette: BilboardPalette
@@ -19,7 +20,8 @@ public final class Bilboard {
         horizontalVirtualPixelsAmount: Int,
         imageHeightInLines: Int,
         color: BilboardColor = .red,
-        borderActive: Bool = false
+        borderActive: Bool = false,
+        renderBackground: Bool = true
     ) throws {
         guard horizontalVirtualPixelsAmount >= 0, imageHeightInLines >= 0 else {
             throw BilboardError.invalidCanvasSize
@@ -29,6 +31,7 @@ public final class Bilboard {
         self.verticalVirtualPixelsAmount = imageHeightInLines * 10
         self.color = color
         self.borderActive = borderActive
+        self.renderBackground = renderBackground
         self.borderOffset = borderActive ? 4 : 0
         self.imageWidth = horizontalVirtualPixelsAmount * 3 + 7 + 2 * self.borderOffset
         self.imageHeight = self.verticalVirtualPixelsAmount * 3 + 7 + 2 * self.borderOffset
@@ -130,8 +133,15 @@ public final class Bilboard {
         }
 
         image.transparent = true
+        image.fillRectangle(
+            topLeft: Point(x: 0, y: 0),
+            bottomRight: Point(x: self.imageWidth - 1, y: self.imageHeight - 1),
+            color: BilboardPalette.rgb(0, 0, 0, alpha: 0)
+        )
 
-        self.renderBackground(on: image)
+        if self.renderBackground {
+            self.renderBackground(on: image)
+        }
         self.renderActivePixels(on: image)
 
         do {

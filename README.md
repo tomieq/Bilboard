@@ -72,7 +72,8 @@ let bilboard = try Bilboard(
     horizontalVirtualPixelsAmount: 150,
     imageHeightInLines: 4,
     color: .red,
-    borderActive: true
+    borderActive: true,
+    renderBackground: true
 )
 ```
 
@@ -82,6 +83,7 @@ Available initializer parameters:
 - `imageHeightInLines: Int` - number of 10-pixel text rows.
 - `color: BilboardColor` - board color palette. Default is `.red`.
 - `borderActive: Bool` - enables the rounded outer frame.
+- `renderBackground: Bool` - renders the board surface and optional border. Default is `true`. When `false`, only active pixels are rendered on a transparent background.
 
 Drawing methods:
 
@@ -164,6 +166,21 @@ bilboard.addSentenceCenter("Status: OK", yOffset: 1)
 
 let pngData = try bilboard.getImage()
 try pngData.write(to: URL(fileURLWithPath: "/tmp/bilboard.png"))
+```
+
+### Render pixels on a transparent background
+
+Set `renderBackground` to `false` to omit the board surface and border from the PNG:
+
+```swift
+let bilboard = try Bilboard(
+    horizontalVirtualPixelsAmount: 120,
+    imageHeightInLines: 3,
+    renderBackground: false
+)
+
+bilboard.addSentenceCenter("Status: OK", yOffset: 1)
+let pngData = try bilboard.getImage()
 ```
 
 ### Draw custom shapes on the board
