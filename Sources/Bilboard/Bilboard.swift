@@ -233,16 +233,18 @@ public final class Bilboard {
             bottomRight: Point(x: self.imageWidth - 1 - self.borderOffset, y: self.imageHeight - 1 - self.borderOffset),
             color: BilboardPalette.rgb(34, 34, 34)
         )
-        image.drawLine(
-            from: Point(x: self.borderOffset + 2, y: self.imageHeight - 2 - self.borderOffset),
-            to: Point(x: self.imageWidth - 2 - self.borderOffset, y: self.imageHeight - 2 - self.borderOffset),
-            color: BilboardPalette.rgb(102, 102, 102)
-        )
-        image.drawLine(
-            from: Point(x: self.imageWidth - 2 - self.borderOffset, y: self.borderOffset + 2),
-            to: Point(x: self.imageWidth - 2 - self.borderOffset, y: self.imageHeight - 2 - self.borderOffset),
-            color: BilboardPalette.rgb(102, 102, 102)
-        )
+        if self.borderActive {
+            image.drawLine(
+                from: Point(x: self.borderOffset + 2, y: self.imageHeight - 2 - self.borderOffset),
+                to: Point(x: self.imageWidth - 2 - self.borderOffset, y: self.imageHeight - 2 - self.borderOffset),
+                color: BilboardPalette.rgb(102, 102, 102)
+            )
+            image.drawLine(
+                from: Point(x: self.imageWidth - 2 - self.borderOffset, y: self.borderOffset + 2),
+                to: Point(x: self.imageWidth - 2 - self.borderOffset, y: self.imageHeight - 2 - self.borderOffset),
+                color: BilboardPalette.rgb(102, 102, 102)
+            )
+        }
 
         for x in 0...self.horizontalVirtualPixelsAmount {
             for y in 0...self.verticalVirtualPixelsAmount {

@@ -206,10 +206,12 @@ public final class Bilboard {
             rect: CGRect(x: self.borderOffset, y: self.borderOffset, width: self.imageWidth - 2 * self.borderOffset, height: self.imageHeight - 2 * self.borderOffset),
             color: UIColor(red: 34 / 255, green: 34 / 255, blue: 34 / 255, alpha: 1)
         )
-        context.setStrokeColor(UIColor(red: 102 / 255, green: 102 / 255, blue: 102 / 255, alpha: 1).cgColor)
-        context.setLineWidth(1)
-        self.strokeLine(in: context, fromX: self.borderOffset + 2, fromY: self.imageHeight - 2 - self.borderOffset, toX: self.imageWidth - 2 - self.borderOffset, toY: self.imageHeight - 2 - self.borderOffset)
-        self.strokeLine(in: context, fromX: self.imageWidth - 2 - self.borderOffset, fromY: self.borderOffset + 2, toX: self.imageWidth - 2 - self.borderOffset, toY: self.imageHeight - 2 - self.borderOffset)
+        if self.borderActive {
+            context.setStrokeColor(UIColor(red: 102 / 255, green: 102 / 255, blue: 102 / 255, alpha: 1).cgColor)
+            context.setLineWidth(1)
+            self.strokeLine(in: context, fromX: self.borderOffset + 2, fromY: self.imageHeight - 2 - self.borderOffset, toX: self.imageWidth - 2 - self.borderOffset, toY: self.imageHeight - 2 - self.borderOffset)
+            self.strokeLine(in: context, fromX: self.imageWidth - 2 - self.borderOffset, fromY: self.borderOffset + 2, toX: self.imageWidth - 2 - self.borderOffset, toY: self.imageHeight - 2 - self.borderOffset)
+        }
 
         for x in 0...self.horizontalVirtualPixelsAmount {
             for y in 0...self.verticalVirtualPixelsAmount {
